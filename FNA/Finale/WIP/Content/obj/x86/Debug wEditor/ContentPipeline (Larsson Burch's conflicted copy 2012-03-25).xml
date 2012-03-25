@@ -1,0 +1,2371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline" xmlns:Framework="Microsoft.Xna.Framework" xmlns:Processors="Microsoft.Xna.Framework.Content.Pipeline.Processors">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Effects\FNASpriteRender.fx</Source>
+      <Name>Effects\FNASpriteRender</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Effects\FNASpriteRender.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Effects\FNAAmbientLight.fx</Source>
+      <Name>Effects\FNAAmbientLight</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Effects\FNAAmbientLight.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+      <Dependency>
+        <Key>Effects\Include\FNACommon.fxh</Key>
+        <Value>2011-11-10T17:08:06-05:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>Effects\Include\FNALighting.fxh</Key>
+        <Value>2011-11-10T17:08:06-05:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>Effects\Include\FNAPostprocessing.fxh</Key>
+        <Value>2011-11-10T17:08:06-05:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Effects\FNAClearGBuffer.fx</Source>
+      <Name>Effects\FNAClearGBuffer</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Effects\FNAClearGBuffer.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+      <Dependency>
+        <Key>Effects\Include\FNACommon.fxh</Key>
+        <Value>2011-11-10T17:08:06-05:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>Effects\Include\FNAPostprocessing.fxh</Key>
+        <Value>2011-11-10T17:08:06-05:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Effects\FNACombineBuffers.fx</Source>
+      <Name>Effects\FNACombineBuffers</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Effects\FNACombineBuffers.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+      <Dependency>
+        <Key>Effects\Include\FNACommon.fxh</Key>
+        <Value>2011-11-10T17:08:06-05:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>Effects\Include\FNAPostprocessing.fxh</Key>
+        <Value>2011-11-10T17:08:06-05:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>Effects\Include\FNAGBufferData.fxh</Key>
+        <Value>2011-11-10T17:08:06-05:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Effects\FNACreateDepthBuffer.fx</Source>
+      <Name>Effects\FNACreateDepthBuffer</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Effects\FNACreateDepthBuffer.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+      <Dependency>
+        <Key>Effects\Include\FNACommon.fxh</Key>
+        <Value>2011-11-10T17:08:06-05:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Effects\FNADirectionalLight.fx</Source>
+      <Name>Effects\FNADirectionalLight</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Effects\FNADirectionalLight.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+      <Dependency>
+        <Key>Effects\Include\FNACommon.fxh</Key>
+        <Value>2011-11-10T17:08:06-05:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>Effects\Include\FNALighting.fxh</Key>
+        <Value>2011-11-10T17:08:06-05:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>Effects\Include\FNAPostprocessing.fxh</Key>
+        <Value>2011-11-10T17:08:06-05:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>Effects\Include\FNAGBufferData.fxh</Key>
+        <Value>2011-11-10T17:08:06-05:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Effects\FNAPointLight.fx</Source>
+      <Name>Effects\FNAPointLight</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Effects\FNAPointLight.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+      <Dependency>
+        <Key>Effects\Include\FNACommon.fxh</Key>
+        <Value>2011-11-10T17:08:06-05:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>Effects\Include\FNALighting.fxh</Key>
+        <Value>2011-11-10T17:08:06-05:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>Effects\Include\FNAPostprocessing.fxh</Key>
+        <Value>2011-11-10T17:08:06-05:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>Effects\Include\FNAGBufferData.fxh</Key>
+        <Value>2011-11-10T17:08:06-05:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Effects\FNARenderGBuffer.fx</Source>
+      <Name>Effects\FNARenderGBuffer</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Effects\FNARenderGBuffer.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+      <Dependency>
+        <Key>Effects\Include\FNACommon.fxh</Key>
+        <Value>2011-11-10T17:08:06-05:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>Effects\Include\FNADepthData.fxh</Key>
+        <Value>2011-11-10T17:08:06-05:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Fonts\DebugFont.spritefont</Source>
+      <Name>Fonts\DebugFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Fonts\DebugFont.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\concept7.mat</Source>
+      <Name>Materials\Forward\concept7</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\concept7.xnb</Output>
+      <Time>2011-11-14T13:16:42-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\concept7_0.xml</Key>
+        <Value>2012-03-25T17:22:22.7958984-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\concept7_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\tile_floor.mat</Source>
+      <Name>Materials\Forward\tile_floor</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\tile_floor.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\tile_floor_0.xml</Key>
+        <Value>2012-03-25T17:22:23.8955078-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\tile_floor_0.xnb</Request>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\tile_floor_normal_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\oldManSheet.mat</Source>
+      <Name>Materials\Forward\oldManSheet</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\oldManSheet.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\oldManSheet_0.xml</Key>
+        <Value>2012-03-25T17:22:24.790039-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\oldManSheet_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\Burberry.mat</Source>
+      <Name>Materials\Forward\Burberry</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\Burberry.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\Burberry_0.xml</Key>
+        <Value>2012-03-25T17:22:25.3847656-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Burberry_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\Concept4.mat</Source>
+      <Name>Materials\Forward\Concept4</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\Concept4.xnb</Output>
+      <Time>2011-11-14T13:16:42-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\Concept4_0.xml</Key>
+        <Value>2012-03-25T17:22:26.0605468-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Concept4_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\scarfellina.mat</Source>
+      <Name>Materials\Forward\scarfellina</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\scarfellina.xnb</Output>
+      <Time>2011-11-14T17:35:48-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\scarfellina_0.xml</Key>
+        <Value>2012-03-25T17:22:26.7929687-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\scarfellina_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\terrain.mat</Source>
+      <Name>Materials\Forward\terrain</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\terrain.xnb</Output>
+      <Time>2011-11-19T15:35:34-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\terrain_0.xml</Key>
+        <Value>2012-03-25T17:22:27.4287109-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\terrain_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\grass1.mat</Source>
+      <Name>Materials\Forward\grass1</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\grass1.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\grass1_0.xml</Key>
+        <Value>2012-03-25T17:22:29.0332031-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\grass1_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\bush1.mat</Source>
+      <Name>Materials\Forward\bush1</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\bush1.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\bush1_0.xml</Key>
+        <Value>2012-03-25T17:22:29.5585937-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\bush1_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\bush2.mat</Source>
+      <Name>Materials\Forward\bush2</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\bush2.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\bush2_0.xml</Key>
+        <Value>2012-03-25T17:22:29.7802734-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\bush2_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\tree1.mat</Source>
+      <Name>Materials\Forward\tree1</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\tree1.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\tree1_0.xml</Key>
+        <Value>2012-03-25T17:22:29.8945312-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\tree1_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\tree2.mat</Source>
+      <Name>Materials\Forward\tree2</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\tree2.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\tree2_0.xml</Key>
+        <Value>2012-03-25T17:22:30.15625-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\tree2_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\fullBlack.mat</Source>
+      <Name>Materials\Forward\fullBlack</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\fullBlack.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\fullBlack_0.xml</Key>
+        <Value>2012-03-25T17:22:30.4238281-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\SilhouettePieces\fullBlack_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\oneCorner01.mat</Source>
+      <Name>Materials\Forward\oneCorner01</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\oneCorner01.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\oneCorner01_0.xml</Key>
+        <Value>2012-03-25T17:22:30.625-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\SilhouettePieces\oneCorner01_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\twoCorners01.mat</Source>
+      <Name>Materials\Forward\twoCorners01</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\twoCorners01.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\twoCorners01_0.xml</Key>
+        <Value>2012-03-25T17:22:30.8300781-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\SilhouettePieces\twoCorners01_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\twoCorners02.mat</Source>
+      <Name>Materials\Forward\twoCorners02</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\twoCorners02.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\twoCorners02_0.xml</Key>
+        <Value>2012-03-25T17:22:31.0351562-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\SilhouettePieces\twoCorners02_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\twoCorners03.mat</Source>
+      <Name>Materials\Forward\twoCorners03</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\twoCorners03.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\twoCorners03_0.xml</Key>
+        <Value>2012-03-25T17:22:31.2568359-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\SilhouettePieces\twoCorners03_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\twoCorners04.mat</Source>
+      <Name>Materials\Forward\twoCorners04</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\twoCorners04.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\twoCorners04_0.xml</Key>
+        <Value>2012-03-25T17:22:31.4580078-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\SilhouettePieces\twoCorners04_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\twoCorners05.mat</Source>
+      <Name>Materials\Forward\twoCorners05</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\twoCorners05.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\twoCorners05_0.xml</Key>
+        <Value>2012-03-25T17:22:31.6611328-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\SilhouettePieces\twoCorners05_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\threeCorners01.mat</Source>
+      <Name>Materials\Forward\threeCorners01</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\threeCorners01.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\threeCorners01_0.xml</Key>
+        <Value>2012-03-25T17:22:31.8564453-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\SilhouettePieces\threeCorners01_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\newCharacter.mat</Source>
+      <Name>Materials\Forward\newCharacter</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\newCharacter.xnb</Output>
+      <Time>2011-12-06T14:36:46-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\newCharacter_0.xml</Key>
+        <Value>2012-03-25T17:22:32.0751953-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\newCharacter_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\whitePixel.mat</Source>
+      <Name>Materials\Forward\whitePixel</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\whitePixel.xnb</Output>
+      <Time>2011-12-06T16:30:14-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\whitePixel_0.xml</Key>
+        <Value>2012-03-25T17:22:34.0078125-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\WhitePixel_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\debugCircle.mat</Source>
+      <Name>Materials\Forward\debugCircle</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\debugCircle.xnb</Output>
+      <Time>2011-12-06T19:10:38-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\debugCircle_0.xml</Key>
+        <Value>2012-03-25T17:22:34.0957031-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\PhysicsDebug\circle_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\debugRectangle.mat</Source>
+      <Name>Materials\Forward\debugRectangle</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\debugRectangle.xnb</Output>
+      <Time>2011-12-06T19:10:38-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\debugRectangle_0.xml</Key>
+        <Value>2012-03-25T17:22:34.2255859-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\PhysicsDebug\rectangle_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\TestLevelBG0.mat</Source>
+      <Name>Materials\Forward\TestLevelBG0</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\TestLevelBG0.xnb</Output>
+      <Time>2011-12-06T22:23:58-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\TestLevelBG0_0.xml</Key>
+        <Value>2012-03-25T17:22:34.399414-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\bg0_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\TestLevelBG1.mat</Source>
+      <Name>Materials\Forward\TestLevelBG1</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\TestLevelBG1.xnb</Output>
+      <Time>2011-12-06T22:23:58-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\TestLevelBG1_0.xml</Key>
+        <Value>2012-03-25T17:22:36.7548828-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\bg1_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\TestLevelBG2.mat</Source>
+      <Name>Materials\Forward\TestLevelBG2</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\TestLevelBG2.xnb</Output>
+      <Time>2011-12-06T22:23:58-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\TestLevelBG2_0.xml</Key>
+        <Value>2012-03-25T17:22:38.993164-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\bg2_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\TestLevelBG3.mat</Source>
+      <Name>Materials\Forward\TestLevelBG3</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\TestLevelBG3.xnb</Output>
+      <Time>2011-12-06T22:23:58-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\TestLevelBG3_0.xml</Key>
+        <Value>2012-03-25T17:22:41.2568359-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\bg3_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\quadrant01_A.mat</Source>
+      <Name>Materials\Forward\quadrant01_A</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\quadrant01_A.xnb</Output>
+      <Time>2011-12-06T22:40:04-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\quadrant01_A_0.xml</Key>
+        <Value>2012-03-25T17:22:43.5253906-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\quadrant01_A_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\quadrant01_B.mat</Source>
+      <Name>Materials\Forward\quadrant01_B</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\quadrant01_B.xnb</Output>
+      <Time>2011-12-06T22:40:22-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\quadrant01_B_0.xml</Key>
+        <Value>2012-03-25T17:22:43.90625-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\quadrant01_B_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\quadrant01_C.mat</Source>
+      <Name>Materials\Forward\quadrant01_C</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\quadrant01_C.xnb</Output>
+      <Time>2011-12-06T22:40:22-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\quadrant01_C_0.xml</Key>
+        <Value>2012-03-25T17:22:44.421875-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\quadrant01_C_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\quadrant02_A.mat</Source>
+      <Name>Materials\Forward\quadrant02_A</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\quadrant02_A.xnb</Output>
+      <Time>2011-12-07T03:11:56-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\quadrant02_A_0.xml</Key>
+        <Value>2012-03-25T17:22:45.3105468-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\quadrant02_A_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\quadrant02_B.mat</Source>
+      <Name>Materials\Forward\quadrant02_B</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\quadrant02_B.xnb</Output>
+      <Time>2011-12-07T03:12:00-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\quadrant02_B_0.xml</Key>
+        <Value>2012-03-25T17:22:45.7128906-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\quadrant02_B_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\quadrant02_C.mat</Source>
+      <Name>Materials\Forward\quadrant02_C</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\quadrant02_C.xnb</Output>
+      <Time>2011-12-06T23:16:38-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\quadrant02_C_0.xml</Key>
+        <Value>2012-03-25T17:22:46.1044921-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\quadrant02_C_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\pillar01.mat</Source>
+      <Name>Materials\Forward\pillar01</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\pillar01.xnb</Output>
+      <Time>2011-12-06T23:29:38-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\pillar01_0.xml</Key>
+        <Value>2012-03-25T17:22:46.899414-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\pillar01_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\pillar02.mat</Source>
+      <Name>Materials\Forward\pillar02</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\pillar02.xnb</Output>
+      <Time>2011-12-06T23:46:00-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\pillar02_0.xml</Key>
+        <Value>2012-03-25T17:22:47.055664-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\pillar02_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\pillar03.mat</Source>
+      <Name>Materials\Forward\pillar03</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\pillar03.xnb</Output>
+      <Time>2011-12-06T23:46:06-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\pillar03_0.xml</Key>
+        <Value>2012-03-25T17:22:47.1933593-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\pillar03_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\skullboy.mat</Source>
+      <Name>Materials\Forward\skullboy</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\skullboy.xnb</Output>
+      <Time>2011-12-07T00:10:18-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\skullboy_0.xml</Key>
+        <Value>2012-03-25T17:22:47.4658203-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\skullboy_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\quadrant3Front.mat</Source>
+      <Name>Materials\Forward\quadrant3Front</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\quadrant3Front.xnb</Output>
+      <Time>2011-12-07T03:14:04-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\quadrant3Front_0.xml</Key>
+        <Value>2012-03-25T17:22:47.5634765-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\quadrant3Front_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\quadrant3Mid.mat</Source>
+      <Name>Materials\Forward\quadrant3Mid</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\quadrant3Mid.xnb</Output>
+      <Time>2011-12-07T03:14:02-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\quadrant3Mid_0.xml</Key>
+        <Value>2012-03-25T17:22:48.7138671-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\quadrant3Mid_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\quadrant4Back.mat</Source>
+      <Name>Materials\Forward\quadrant4Back</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\quadrant4Back.xnb</Output>
+      <Time>2011-12-07T03:12:10-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\quadrant4Back_0.xml</Key>
+        <Value>2012-03-25T17:22:49.774414-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\quadrant4Back_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\quadrant4Front.mat</Source>
+      <Name>Materials\Forward\quadrant4Front</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Materials\Forward\quadrant4Front.xnb</Output>
+      <Time>2011-12-07T03:12:06-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Materials\Forward\quadrant4Front_0.xml</Key>
+        <Value>2012-03-25T17:22:51.4267578-04:00</Value>
+      </Dependency>
+      <Request>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\quadrant4Front_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Particles\BasicExplosion.xml</Source>
+      <Name>Particles\BasicExplosion</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\BasicExplosion.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\BasicFireball.xml</Source>
+      <Name>Particles\BasicFireball</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\BasicFireball.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\BasicSmokePlume.xml</Source>
+      <Name>Particles\BasicSmokePlume</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\BasicSmokePlume.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\BeamMeUp.xml</Source>
+      <Name>Particles\BeamMeUp</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\BeamMeUp.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\CampFire.xml</Source>
+      <Name>Particles\CampFire</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\CampFire.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\FlowerBloom.xml</Source>
+      <Name>Particles\FlowerBloom</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\FlowerBloom.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\MagicTrail.xml</Source>
+      <Name>Particles\MagicTrail</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\MagicTrail.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Paparazzi.xml</Source>
+      <Name>Particles\Paparazzi</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\Paparazzi.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\SimpleRain.xml</Source>
+      <Name>Particles\SimpleRain</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\SimpleRain.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\StarTrail.xml</Source>
+      <Name>Particles\StarTrail</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\StarTrail.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\WaterJet.xml</Source>
+      <Name>Particles\WaterJet</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\WaterJet.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Textures\Beam.png</Source>
+      <Name>Particles\Textures\Beam</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\Textures\Beam.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Textures\BeamBlurred.png</Source>
+      <Name>Particles\Textures\BeamBlurred</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\Textures\BeamBlurred.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Textures\Cloud001.png</Source>
+      <Name>Particles\Textures\Cloud001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\Textures\Cloud001.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Textures\Cloud002.png</Source>
+      <Name>Particles\Textures\Cloud002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\Textures\Cloud002.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Textures\Cloud003.png</Source>
+      <Name>Particles\Textures\Cloud003</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\Textures\Cloud003.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Textures\Cloud004.png</Source>
+      <Name>Particles\Textures\Cloud004</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\Textures\Cloud004.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Textures\Flame.png</Source>
+      <Name>Particles\Textures\Flame</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\Textures\Flame.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Textures\FlowerBurst.png</Source>
+      <Name>Particles\Textures\FlowerBurst</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\Textures\FlowerBurst.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Textures\Laser.png</Source>
+      <Name>Particles\Textures\Laser</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\Textures\Laser.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Textures\LensFlare.png</Source>
+      <Name>Particles\Textures\LensFlare</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\Textures\LensFlare.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Textures\MultiDot.png</Source>
+      <Name>Particles\Textures\MultiDot</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\Textures\MultiDot.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Textures\Particle001.png</Source>
+      <Name>Particles\Textures\Particle001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\Textures\Particle001.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Textures\Particle002.png</Source>
+      <Name>Particles\Textures\Particle002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\Textures\Particle002.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Textures\Particle003.png</Source>
+      <Name>Particles\Textures\Particle003</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\Textures\Particle003.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Textures\Particle004.png</Source>
+      <Name>Particles\Textures\Particle004</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\Textures\Particle004.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Textures\Particle005.png</Source>
+      <Name>Particles\Textures\Particle005</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\Textures\Particle005.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Textures\Particle006.png</Source>
+      <Name>Particles\Textures\Particle006</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\Textures\Particle006.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Textures\Particle007.png</Source>
+      <Name>Particles\Textures\Particle007</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\Textures\Particle007.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Textures\Ring001.png</Source>
+      <Name>Particles\Textures\Ring001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\Textures\Ring001.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Textures\Ring002.png</Source>
+      <Name>Particles\Textures\Ring002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\Textures\Ring002.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Textures\SoftClumpy.png</Source>
+      <Name>Particles\Textures\SoftClumpy</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\Textures\SoftClumpy.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Textures\SoftSmokey.png</Source>
+      <Name>Particles\Textures\SoftSmokey</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\Textures\SoftSmokey.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Textures\Spikey001.png</Source>
+      <Name>Particles\Textures\Spikey001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\Textures\Spikey001.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Textures\Spikey002.png</Source>
+      <Name>Particles\Textures\Spikey002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\Textures\Spikey002.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Textures\Splash.png</Source>
+      <Name>Particles\Textures\Splash</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\Textures\Splash.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Textures\Spray001.png</Source>
+      <Name>Particles\Textures\Spray001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\Textures\Spray001.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Textures\Star.png</Source>
+      <Name>Particles\Textures\Star</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\Textures\Star.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Textures\Water001.png</Source>
+      <Name>Particles\Textures\Water001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\Textures\Water001.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Textures\Water002.png</Source>
+      <Name>Particles\Textures\Water002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\Textures\Water002.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Textures\Weeds.png</Source>
+      <Name>Particles\Textures\Weeds</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Particles\Textures\Weeds.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\red.png</Source>
+      <Name>Textures\red</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\red.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\terrainCollision.png</Source>
+      <Name>Textures\terrainCollision</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\terrainCollision.xnb</Output>
+      <Time>2011-12-01T19:46:16-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\SilhouettePieces\threeCorners01.png</Source>
+      <Name>Textures\SilhouettePieces\threeCorners01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\SilhouettePieces\threeCorners01.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\SilhouettePieces\fullBlack.png</Source>
+      <Name>Textures\SilhouettePieces\fullBlack</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\SilhouettePieces\fullBlack.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\SilhouettePieces\twoCorners05.png</Source>
+      <Name>Textures\SilhouettePieces\twoCorners05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\SilhouettePieces\twoCorners05.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\SilhouettePieces\oneCorner01.png</Source>
+      <Name>Textures\SilhouettePieces\oneCorner01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\SilhouettePieces\oneCorner01.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\SilhouettePieces\twoCorners01.png</Source>
+      <Name>Textures\SilhouettePieces\twoCorners01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\SilhouettePieces\twoCorners01.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\SilhouettePieces\twoCorners02.png</Source>
+      <Name>Textures\SilhouettePieces\twoCorners02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\SilhouettePieces\twoCorners02.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\SilhouettePieces\twoCorners03.png</Source>
+      <Name>Textures\SilhouettePieces\twoCorners03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\SilhouettePieces\twoCorners03.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\SilhouettePieces\twoCorners04.png</Source>
+      <Name>Textures\SilhouettePieces\twoCorners04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\SilhouettePieces\twoCorners04.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Levels\quadrant01_A_collision.PNG</Source>
+      <Name>Textures\Levels\quadrant01_A_collision</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\quadrant01_A_collision.xnb</Output>
+      <Time>2011-12-06T21:40:30-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Levels\quadrant01_B_collision.PNG</Source>
+      <Name>Textures\Levels\quadrant01_B_collision</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\quadrant01_B_collision.xnb</Output>
+      <Time>2011-12-06T21:48:56-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Levels\quadrant01_C_collision.PNG</Source>
+      <Name>Textures\Levels\quadrant01_C_collision</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\quadrant01_C_collision.xnb</Output>
+      <Time>2011-12-06T21:50:08-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Levels\quadrant02_A_collision.PNG</Source>
+      <Name>Textures\Levels\quadrant02_A_collision</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\quadrant02_A_collision.xnb</Output>
+      <Time>2011-12-06T23:09:36-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Levels\quadrant02_B_collision.PNG</Source>
+      <Name>Textures\Levels\quadrant02_B_collision</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\quadrant02_B_collision.xnb</Output>
+      <Time>2011-12-06T23:14:52-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Levels\quadrant02_C_collision.PNG</Source>
+      <Name>Textures\Levels\quadrant02_C_collision</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\quadrant02_C_collision.xnb</Output>
+      <Time>2011-12-06T23:16:14-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Levels\quadrant3BottomCollision.png</Source>
+      <Name>Textures\Levels\quadrant3BottomCollision</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\quadrant3BottomCollision.xnb</Output>
+      <Time>2011-12-07T02:03:30-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Levels\quadrant3MidCollision.png</Source>
+      <Name>Textures\Levels\quadrant3MidCollision</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\quadrant3MidCollision.xnb</Output>
+      <Time>2011-12-07T02:03:30-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Levels\quadrant4BottomCollision.png</Source>
+      <Name>Textures\Levels\quadrant4BottomCollision</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\quadrant4BottomCollision.xnb</Output>
+      <Time>2011-12-07T02:03:30-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Levels\quadrant4TopCollision.png</Source>
+      <Name>Textures\Levels\quadrant4TopCollision</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\quadrant4TopCollision.xnb</Output>
+      <Time>2011-12-07T02:03:30-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sunburn\light_rig.scene</Source>
+      <Name>Sunburn\light_rig</Name>
+      <Importer>SceneImporter</Importer>
+      <Processor>SceneProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Sunburn\light_rig.xnb</Output>
+      <Time>2011-12-06T22:32:42-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Sunburn\light_rig_0.xml</Key>
+        <Value>2012-03-25T17:23:01.7001953-04:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Sunburn\scene_environment.env</Source>
+      <Name>Sunburn\scene_environment</Name>
+      <Importer>SceneEnvironmentImporter</Importer>
+      <Processor>SceneEnvironmentProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Sunburn\scene_environment.xnb</Output>
+      <Time>2011-11-17T11:46:40-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug wEditor\Sunburn\scene_environment_0.xml</Key>
+        <Value>2012-03-25T17:23:01.734375-04:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\concept7.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\concept7_0.xml</Output>
+      <Time>2011-11-14T13:16:42-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\concept7.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\concept7_0.xnb</Output>
+      <Time>2011-11-14T13:16:42-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\tile_floor.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\tile_floor_0.xml</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\tile_floor.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\tile_floor_0.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\tile_floor_normal.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\tile_floor_normal_0.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\oldManSheet.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\oldManSheet_0.xml</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\oldManSheet.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\oldManSheet_0.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\Burberry.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\Burberry_0.xml</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Burberry.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Burberry_0.xnb</Output>
+      <Time>2011-11-10T17:08:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\Concept4.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\Concept4_0.xml</Output>
+      <Time>2011-11-14T13:16:42-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Concept4.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Concept4_0.xnb</Output>
+      <Time>2011-11-14T13:16:42-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\scarfellina.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\scarfellina_0.xml</Output>
+      <Time>2011-11-14T17:35:48-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\scarfellina.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\scarfellina_0.xnb</Output>
+      <Time>2011-11-14T17:03:22-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\terrain.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\terrain_0.xml</Output>
+      <Time>2011-11-19T15:35:34-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\terrain.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\terrain_0.xnb</Output>
+      <Time>2011-12-01T19:46:22-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\grass1.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\grass1_0.xml</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\grass1.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\grass1_0.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\bush1.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\bush1_0.xml</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\bush1.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\bush1_0.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\bush2.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\bush2_0.xml</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\bush2.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\bush2_0.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\tree1.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\tree1_0.xml</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\tree1.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\tree1_0.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\tree2.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\tree2_0.xml</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\tree2.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\tree2_0.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\fullBlack.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\fullBlack_0.xml</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\SilhouettePieces\fullBlack.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\SilhouettePieces\fullBlack_0.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\oneCorner01.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\oneCorner01_0.xml</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\SilhouettePieces\oneCorner01.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\SilhouettePieces\oneCorner01_0.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\twoCorners01.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\twoCorners01_0.xml</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\SilhouettePieces\twoCorners01.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\SilhouettePieces\twoCorners01_0.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\twoCorners02.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\twoCorners02_0.xml</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\SilhouettePieces\twoCorners02.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\SilhouettePieces\twoCorners02_0.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\twoCorners03.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\twoCorners03_0.xml</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\SilhouettePieces\twoCorners03.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\SilhouettePieces\twoCorners03_0.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\twoCorners04.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\twoCorners04_0.xml</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\SilhouettePieces\twoCorners04.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\SilhouettePieces\twoCorners04_0.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\twoCorners05.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\twoCorners05_0.xml</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\SilhouettePieces\twoCorners05.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\SilhouettePieces\twoCorners05_0.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\threeCorners01.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\threeCorners01_0.xml</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\SilhouettePieces\threeCorners01.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\SilhouettePieces\threeCorners01_0.xnb</Output>
+      <Time>2011-12-02T16:20:26-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\newCharacter.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\newCharacter_0.xml</Output>
+      <Time>2011-12-06T14:36:46-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\newCharacter.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\newCharacter_0.xnb</Output>
+      <Time>2011-12-06T14:26:44-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\whitePixel.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\whitePixel_0.xml</Output>
+      <Time>2011-12-06T16:30:14-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\WhitePixel.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\WhitePixel_0.xnb</Output>
+      <Time>2011-12-06T16:30:14-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\debugCircle.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\debugCircle_0.xml</Output>
+      <Time>2011-12-06T19:10:38-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\PhysicsDebug\circle.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\PhysicsDebug\circle_0.xnb</Output>
+      <Time>2011-12-06T19:10:38-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\debugRectangle.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\debugRectangle_0.xml</Output>
+      <Time>2011-12-06T19:10:38-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\PhysicsDebug\rectangle.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\PhysicsDebug\rectangle_0.xnb</Output>
+      <Time>2011-12-06T19:10:38-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\TestLevelBG0.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\TestLevelBG0_0.xml</Output>
+      <Time>2011-12-06T22:23:58-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\bg0.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\bg0_0.xnb</Output>
+      <Time>2011-12-06T22:23:58-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\TestLevelBG1.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\TestLevelBG1_0.xml</Output>
+      <Time>2011-12-06T22:23:58-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\bg1.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\bg1_0.xnb</Output>
+      <Time>2011-12-06T22:23:58-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\TestLevelBG2.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\TestLevelBG2_0.xml</Output>
+      <Time>2011-12-06T22:23:58-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\bg2.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\bg2_0.xnb</Output>
+      <Time>2011-12-06T22:23:58-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\TestLevelBG3.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\TestLevelBG3_0.xml</Output>
+      <Time>2011-12-06T22:23:58-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\bg3.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\bg3_0.xnb</Output>
+      <Time>2011-12-06T22:23:58-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\quadrant01_A.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\quadrant01_A_0.xml</Output>
+      <Time>2011-12-06T22:40:04-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Levels\quadrant01_A.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\quadrant01_A_0.xnb</Output>
+      <Time>2011-12-06T21:40:14-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\quadrant01_B.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\quadrant01_B_0.xml</Output>
+      <Time>2011-12-06T22:40:22-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Levels\quadrant01_B.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\quadrant01_B_0.xnb</Output>
+      <Time>2011-12-06T21:49:24-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\quadrant01_C.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\quadrant01_C_0.xml</Output>
+      <Time>2011-12-06T22:40:22-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Levels\quadrant01_C.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\quadrant01_C_0.xnb</Output>
+      <Time>2011-12-06T21:49:58-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\quadrant02_A.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\quadrant02_A_0.xml</Output>
+      <Time>2011-12-07T03:11:56-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Levels\quadrant02_A.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\quadrant02_A_0.xnb</Output>
+      <Time>2011-12-06T23:09:18-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\quadrant02_B.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\quadrant02_B_0.xml</Output>
+      <Time>2011-12-07T03:12:00-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Levels\quadrant02_B.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\quadrant02_B_0.xnb</Output>
+      <Time>2011-12-06T23:14:44-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\quadrant02_C.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\quadrant02_C_0.xml</Output>
+      <Time>2011-12-06T23:16:38-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Levels\quadrant02_C.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\quadrant02_C_0.xnb</Output>
+      <Time>2011-12-06T23:16:02-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\pillar01.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\pillar01_0.xml</Output>
+      <Time>2011-12-06T23:29:38-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Levels\pillar01.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\pillar01_0.xnb</Output>
+      <Time>2011-12-06T23:30:24-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\pillar02.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\pillar02_0.xml</Output>
+      <Time>2011-12-06T23:46:00-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Levels\pillar02.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\pillar02_0.xnb</Output>
+      <Time>2011-12-06T19:31:50-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\pillar03.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\pillar03_0.xml</Output>
+      <Time>2011-12-06T23:46:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Levels\pillar03.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\pillar03_0.xnb</Output>
+      <Time>2011-12-06T19:30:42-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\skullboy.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\skullboy_0.xml</Output>
+      <Time>2011-12-07T00:10:18-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Levels\skullboy.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\skullboy_0.xnb</Output>
+      <Time>2011-12-06T19:20:08-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\quadrant3Front.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\quadrant3Front_0.xml</Output>
+      <Time>2011-12-07T03:14:04-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Levels\quadrant3Front.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\quadrant3Front_0.xnb</Output>
+      <Time>2011-12-07T02:03:30-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\quadrant3Mid.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\quadrant3Mid_0.xml</Output>
+      <Time>2011-12-07T03:14:02-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Levels\quadrant3Mid.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\quadrant3Mid_0.xnb</Output>
+      <Time>2011-12-07T02:03:30-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\quadrant4Back.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\quadrant4Back_0.xml</Output>
+      <Time>2011-12-07T03:12:10-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Levels\quadrant4Back.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\quadrant4Back_0.xnb</Output>
+      <Time>2011-12-07T02:03:30-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Materials\Forward\quadrant4Front.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Materials\Forward\quadrant4Front_0.xml</Output>
+      <Time>2011-12-07T03:12:06-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Levels\quadrant4Front.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\Textures\Levels\quadrant4Front_0.xnb</Output>
+      <Time>2011-12-07T02:03:30-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sunburn\light_rig.scene</Source>
+      <Importer>SceneImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Sunburn\light_rig_0.xml</Output>
+      <Time>2011-12-06T22:32:42-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Sunburn\scene_environment.env</Source>
+      <Importer>SceneEnvironmentImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug wEditor\Sunburn\scene_environment_0.xml</Output>
+      <Time>2011-11-17T11:46:40-05:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Debug wEditor</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\backup\Dropbox\FNA\Finale\WIP\Content\</RootDirectory>
+      <LoggerRootDirectory>C:\backup\Dropbox\FNA\Finale\WIP\Source\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\backup\Dropbox\FNA\Finale\WIP\Content\obj\x86\Debug wEditor\</IntermediateDirectory>
+      <OutputDirectory>C:\backup\Dropbox\FNA\Finale\WIP\Bin\Debug wEditor\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\SynapseGaming-SunBurn-Indie-Processors\v4.0_2.0.16.5__eb76e51de43fcd70\SynapseGaming-SunBurn-Indie-Processors.dll</Key>
+        <Value>2011-11-10T13:21:04.6680794-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\backup\Dropbox\FNA\FNAEngine\Particle Engine\References\X86\ProjectMercury.dll</Key>
+        <Value>2011-11-10T17:08:06-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2011-11-01T17:38:16.9140625-04:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

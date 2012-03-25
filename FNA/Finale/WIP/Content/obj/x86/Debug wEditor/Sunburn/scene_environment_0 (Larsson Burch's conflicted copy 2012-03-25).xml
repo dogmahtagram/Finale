@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Processors="SynapseGaming.LightingSystem.Processors">
+  <Asset Type="Processors:SceneEnvironmentContent">
+    <Identity>
+      <SourceFilename>C:\backup\Dropbox\FNA\Finale\WIP\Content\Sunburn\scene_environment.env</SourceFilename>
+    </Identity>
+    <Name>scene_environment</Name>
+    <File>C:\backup\Dropbox\FNA\Finale\WIP\Content\Sunburn\scene_environment.env</File>
+    <ProjectFile>C:\backup\Dropbox\FNA\Finale\WIP\Content\Content.contentproj</ProjectFile>
+    <Xml>&lt;root&gt;
+  &lt;SceneEnvironment&gt;
+    &lt;VisibleDistance&gt;500000&lt;/VisibleDistance&gt;
+    &lt;FogEnabled&gt;True&lt;/FogEnabled&gt;
+    &lt;FogColor&gt;
+      &lt;Vector3&gt;
+        &lt;X&gt;0.75&lt;/X&gt;
+        &lt;Y&gt;0.75&lt;/Y&gt;
+        &lt;Z&gt;0.75&lt;/Z&gt;
+      &lt;/Vector3&gt;
+    &lt;/FogColor&gt;
+    &lt;FogStartDistance&gt;50000&lt;/FogStartDistance&gt;
+    &lt;FogEndDistance&gt;200000&lt;/FogEndDistance&gt;
+    &lt;ShadowFadeStartDistance&gt;50&lt;/ShadowFadeStartDistance&gt;
+    &lt;ShadowFadeEndDistance&gt;50&lt;/ShadowFadeEndDistance&gt;
+    &lt;ShadowCasterDistance&gt;50&lt;/ShadowCasterDistance&gt;
+    &lt;BloomAmount&gt;3&lt;/BloomAmount&gt;
+    &lt;BloomThreshold&gt;0.9&lt;/BloomThreshold&gt;
+    &lt;DynamicRangeEnabled&gt;True&lt;/DynamicRangeEnabled&gt;
+    &lt;ExposureAmount&gt;1&lt;/ExposureAmount&gt;
+    &lt;DynamicRangeTransitionMaxScale&gt;100&lt;/DynamicRangeTransitionMaxScale&gt;
+    &lt;DynamicRangeTransitionMinScale&gt;0.01&lt;/DynamicRangeTransitionMinScale&gt;
+    &lt;DynamicRangeTransitionTime&gt;0.5&lt;/DynamicRangeTransitionTime&gt;
+    &lt;DynamicRangeSaturationAmount&gt;0.5&lt;/DynamicRangeSaturationAmount&gt;
+    &lt;DynamicRangeDarkenAmount&gt;0.1&lt;/DynamicRangeDarkenAmount&gt;
+    &lt;DynamicRangeCinematicAmount&gt;0.5&lt;/DynamicRangeCinematicAmount&gt;
+    &lt;Gravity&gt;1&lt;/Gravity&gt;
+    &lt;EditorIconScale&gt;0.3&lt;/EditorIconScale&gt;
+    &lt;EditorMoveScale&gt;3&lt;/EditorMoveScale&gt;
+    &lt;EditorRotationScale&gt;4&lt;/EditorRotationScale&gt;
+    &lt;EditorDefaultObjectScale&gt;0.1&lt;/EditorDefaultObjectScale&gt;
+  &lt;/SceneEnvironment&gt;
+  &lt;classes&gt;
+    &lt;SceneEnvironment fullname="SynapseGaming.LightingSystem.Core.SceneEnvironment" assembly="SynapseGaming-SunBurn-Pro" fullyqualifiedname="SynapseGaming.LightingSystem.Core.SceneEnvironment, SynapseGaming-SunBurn-Pro, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c23c60523565dbfd" /&gt;
+    &lt;Vector3 fullname="Microsoft.Xna.Framework.Vector3" assembly="Microsoft.Xna.Framework" fullyqualifiedname="Microsoft.Xna.Framework.Vector3, Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553" /&gt;
+  &lt;/classes&gt;
+&lt;/root&gt;</Xml>
+  </Asset>
+</XnaContent>

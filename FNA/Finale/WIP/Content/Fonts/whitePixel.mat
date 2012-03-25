@@ -1,0 +1,29 @@
+//-----------------------------------------------
+// Synapse Gaming - SunBurn Lighting System
+// Exported from the SunBurn material editor
+//-----------------------------------------------
+
+Locale: en-US
+
+AddressModeU: Wrap
+AddressModeV: Wrap
+AddressModeW: Wrap
+DiffuseColor: 1.0 1.0 1.0
+DiffuseMap: "..\..\Textures\WhitePixel.png"
+DoubleSided: False
+Elasticity: 0.0
+EmissiveColor: 0 0 0
+EmissiveMap: ""
+FresnelMicrofacetDistribution: 0.0
+FresnelReflectBias: 0.0
+FresnelReflectOffset: 0.0
+Friction: 0.0
+NormalMap: ""
+ParallaxMap: ""
+ParallaxOffset: 0
+ParallaxScale: 0
+SpecularAmount: 0.1
+SpecularColorMap: ""
+SpecularPower: 0
+Transparency: 0.0
+TransparencyMode: Clip

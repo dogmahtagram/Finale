@@ -1,0 +1,5 @@
+C:\dev2\Cohort7-Public\Venture\FSS\Finale\WIP\Content\obj\x86\Debug wEditor\ResolveAssemblyReference.cache
+C:\dev\Finale\WIP\Content\obj\x86\Debug wEditor\ResolveAssemblyReference.cache
+C:\Users\atran\Dropbox\FNA\Finale\WIP\Content\obj\x86\Debug wEditor\ResolveAssemblyReference.cache
+A:\Dropbox\FNA\Finale\WIP\Content\obj\x86\Debug wEditor\ResolveAssemblyReference.cache
+C:\backup\Dropbox\FNA\Finale\WIP\Content\obj\x86\Debug wEditor\ResolveAssemblyReference.cache

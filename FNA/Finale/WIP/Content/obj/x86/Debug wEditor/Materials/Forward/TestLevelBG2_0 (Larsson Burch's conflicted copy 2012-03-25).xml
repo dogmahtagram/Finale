@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Processors="SynapseGaming.LightingSystem.Processors">
+  <Asset Type="Processors:LightingMaterialContent">
+    <Identity>
+      <SourceFilename>C:\backup\Dropbox\FNA\Finale\WIP\Content\Materials\Forward\TestLevelBG2.mat</SourceFilename>
+    </Identity>
+    <MaterialName></MaterialName>
+    <MaterialFile></MaterialFile>
+    <ProjectFile></ProjectFile>
+    <Skinned>false</Skinned>
+    <DoubleSided>false</DoubleSided>
+    <TransparencyMode>None</TransparencyMode>
+    <Transparency>1</Transparency>
+    <Elasticity>0.25</Elasticity>
+    <Friction>0.25</Friction>
+    <DiffuseMapTexture Null="true" />
+    <NormalMapTexture Null="true" />
+    <DiffuseMapFileFound>true</DiffuseMapFileFound>
+    <DiffuseMapFile>C:\backup\Dropbox\FNA\Finale\WIP\Content\Materials\Forward\..\..\Textures\bg2.png</DiffuseMapFile>
+    <NormalMapFile></NormalMapFile>
+    <SpecularPowerFound>true</SpecularPowerFound>
+    <SpecularPower>64</SpecularPower>
+    <SpecularAmountFound>true</SpecularAmountFound>
+    <SpecularAmount>0.1</SpecularAmount>
+    <DiffuseColorFound>true</DiffuseColorFound>
+    <DiffuseColor>0.5882353 0.5882353 0.5882353 1</DiffuseColor>
+    <EmissiveColorFound>true</EmissiveColorFound>
+    <EmissiveColor>0 0 0 1</EmissiveColor>
+    <AddressU>Wrap</AddressU>
+    <AddressV>Wrap</AddressV>
+    <AddressW>Wrap</AddressW>
+  </Asset>
+</XnaContent>

@@ -1,0 +1,172 @@
+/*------------------------------------------------------------------------------------------------------------------------------------
+File:			FNAShader.fx
+Author:			Jerad Dunn
+Last Update:	09/11/11
+
+This shader is to be used in Maya when rendering out objects for use in the FNA Engine.
+Apply this shader to generate normal and offset maps which can be rendered out through Maya's hardware rendering capabilities.
+------------------------------------------------------------------------------------------------------------------------------------*/
+
+float4x4 World : World; 
+float4x4 WVP : WorldViewProjection;
+float4x4 WIT : WorldInverseTranspose;
+
+float MaxOffsetCentimeters = 100.0f;								/// The maximum displacement (in any dimension) IN CENTIMETERS of this object from the origin in Maya 
+																	/// (which corresponds to the sprite's registration point in engine). Editable from within Maya.
+																	/// This value should be chosen so that 'normalized' offset values are spread as evenly
+																	/// throughout the range [0,1] as possible as to prevent floating point accuracy issues.
+																	/// This value is in centimeters because Maya is awesome and completely ignores whatever scale you choose
+																	/// when it comes to the coordinates that are fed into the vertex shader.
+																	
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Required to interact with Maya
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+struct appdata
+{
+	float3 Position	: POSITION;
+	float4 Normal	: NORMAL;
+	float2 TexCoord: TEXCOORD0;
+	float3 Tangent : TEXCOORD1;
+	float3 Binormal : TEXCOORD2;
+};
+
+struct VS_OUTPUT
+{
+	float4 Position : POSITION;
+	float4 Color : COLOR0;
+	float3 Offset : TEXCOORD0;
+};
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Vertex Shader to show an object's normals on each one of its pixels.
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+VS_OUTPUT FNA_NormalMap_VertexShader(appdata IN)
+{
+	VS_OUTPUT OUT;
+
+	float4 PosWorld = float4(IN.Position, 1.0);
+	OUT.Position = mul(WVP, PosWorld);
+	
+	float4 outColor = float4(0.5, 0.5, 0.5, 1);
+	float3 normal = normalize(mul(IN.Normal, WIT).xyz);
+	
+	// When in the orthographic view in Maya, the positive-Y axis is UP along the screen.
+	// This is opposite what it is in engine (and with computer graphics in general), so this compensates.
+	normal.y *= -1.0;
+	
+	// Converting the original values ranging from [-1,1] to [0,1]
+	outColor.rgb += (0.5 * normal);
+	
+	OUT.Color = outColor;
+
+	return OUT;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Vertex Shader to show an object's offset for each one of its pixels.
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+VS_OUTPUT FNA_OffsetMap_VertexShader(appdata IN)
+{
+	VS_OUTPUT OUT;
+
+	float4 PosWorld = float4(IN.Position, 1.0);
+	OUT.Position = mul(WVP, PosWorld);
+	
+	float4 outColor = float4(0.0, 0.0, 0.0, 1.0);
+	
+	// Since the origin in Maya corresponds with the Sprite's registration point in engine, the offset is simply the
+	// position (in world space) of the vertex in question.
+	float3 offset = IN.Position.xyz;
+	
+	// Normalizing the offset so that every value will fit in the range [0,1] (at least eventually...see below)
+	offset /= MaxOffsetCentimeters;
+	
+	// Upon observation of the orthographic view and how sprites are supposed to be rendered, it should be obvious that
+	// only the X values can range from [-1,1], Y and Z values are in the range [0,1].  Therefore, map all X values to the range [0,1]
+	outColor.r = 0.5 + 0.5 * offset.x;
+	
+	// NOTE: With the above vertex shader, I mentioned the discrepancy between Maya's positive-Y axis and that of FNA's.
+	//		 However, in the comment above, I stated that the Y values are in the range [0,1] and no corrections were performed on this value.
+	//		 Why?  It actually turns out that it's easier to just decode that in the shader on the FNA side to get things working.
+	//       Is it more efficient?  Definitely not! But it was the only way to get it working at the moment, and it is one fix that I definitely
+	//		 have in mind for this shader.
+	
+	// Set the remaining values
+	outColor.gb = offset.yz;
+	
+	OUT.Color = outColor;
+
+	return OUT;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// All of the work was performed in the vertex shader, so for our purposes, the fragment shader is very, very simple.
+// We'll let the interpolator handle the rest.
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+float4 FNA_FragmentShader(VS_OUTPUT IN) : COLOR
+{
+	return IN.Color;
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Technique for Normal Map generation
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+technique FNA_Engine_NormalMap <
+	string Script = "Pass=p0;";
+> {
+    pass p0 <
+	string Script = "Draw=geometry;";
+    > {
+        VertexProgram = compile vp40 FNA_NormalMap_VertexShader();
+		DepthTestEnable = true;
+		DepthMask = true;
+		CullFaceEnable = false;
+		BlendEnable = false;
+		DepthFunc = LEqual;
+        FragmentProgram = compile fp40 FNA_FragmentShader();
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Technique for Offset Map generation
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+technique FNA_Engine_OffsetMap <
+	string Script = "Pass=p0;";
+> {
+    pass p0 <
+	string Script = "Draw=geometry;";
+    > {
+        VertexProgram = compile vp40 FNA_OffsetMap_VertexShader();
+		DepthTestEnable = true;
+		DepthMask = true;
+		CullFaceEnable = false;
+		BlendEnable = false;
+		DepthFunc = LEqual;
+        FragmentProgram = compile fp40 FNA_FragmentShader();
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Duplicated version of the Offset Map generation technique to account for something really stupid in Maya.
+// It turns out that the last technique can never be activated...so to get your last technique to work, you actually
+// have to create a dummy duplicate such that it is not last on the list...Yeah, it's dumb.
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+technique DONT_USE_THIS_BECAUSE_MAYA_IS_STUPID <
+	string Script = "Pass=p0;";
+> {
+    pass p0 <
+	string Script = "Draw=geometry;";
+    > {
+        VertexProgram = compile vp40 FNA_OffsetMap_VertexShader();
+		DepthTestEnable = true;
+		DepthMask = true;
+		CullFaceEnable = false;
+		BlendEnable = false;
+		DepthFunc = LEqual;
+        FragmentProgram = compile fp40 FNA_FragmentShader();
+    }
+}

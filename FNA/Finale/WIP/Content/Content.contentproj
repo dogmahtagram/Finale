@@ -1,0 +1,731 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectGuid>{6035C7D1-7A04-441F-BE9D-B27B0740E682}</ProjectGuid>
+    <ProjectTypeGuids>{96E2B04D-8817-42c6-938A-82C39BA4D311};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <OutputPath>bin\$(Platform)\$(Configuration)</OutputPath>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>TheFinaleContent</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.EffectImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.FBXImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.TextureImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.XImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.AudioImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.VideoImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ProjectMercury">
+      <HintPath>..\..\..\FNAEngine\Particle Engine\References\X86\ProjectMercury.dll</HintPath>
+    </Reference>
+    <Reference Include="SynapseGaming-SunBurn-Indie-Processors, Version=2.0.16.5, Culture=neutral, PublicKeyToken=eb76e51de43fcd70, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\FNAEngine\FNA\Content\Sunburn\SynapseGaming-SunBurn-Indie-Processors.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\FNASpriteRender.fx">
+      <Name>FNASpriteRender</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fonts\DebugFont.spritefont">
+      <Name>DebugFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effects\FNAAmbientLight.fx">
+      <Name>FNAAmbientLight</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Effects\FNAClearGBuffer.fx">
+      <Name>FNAClearGBuffer</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Effects\FNACombineBuffers.fx">
+      <Name>FNACombineBuffers</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Effects\FNACreateDepthBuffer.fx">
+      <Name>FNACreateDepthBuffer</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Effects\FNADirectionalLight.fx">
+      <Name>FNADirectionalLight</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Effects\FNAPointLight.fx">
+      <Name>FNAPointLight</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+    <Compile Include="Effects\FNARenderGBuffer.fx">
+      <Name>FNARenderGBuffer</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Materials\Forward\concept7.mat">
+      <Name>concept7</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Video\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Particles\BasicExplosion.xml">
+      <Name>BasicExplosion</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\BasicFireball.xml">
+      <Name>BasicFireball</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\BasicSmokePlume.xml">
+      <Name>BasicSmokePlume</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\BeamMeUp.xml">
+      <Name>BeamMeUp</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\CampFire.xml">
+      <Name>CampFire</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\FlowerBloom.xml">
+      <Name>FlowerBloom</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\MagicTrail.xml">
+      <Name>MagicTrail</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Paparazzi.xml">
+      <Name>Paparazzi</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\SimpleRain.xml">
+      <Name>SimpleRain</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\StarTrail.xml">
+      <Name>StarTrail</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\WaterJet.xml">
+      <Name>WaterJet</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Particles\Textures\Beam.png">
+      <Name>Beam</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Textures\BeamBlurred.png">
+      <Name>BeamBlurred</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Textures\Cloud001.png">
+      <Name>Cloud001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Textures\Cloud002.png">
+      <Name>Cloud002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Textures\Cloud003.png">
+      <Name>Cloud003</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Textures\Cloud004.png">
+      <Name>Cloud004</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Textures\Flame.png">
+      <Name>Flame</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Textures\FlowerBurst.png">
+      <Name>FlowerBurst</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Textures\Laser.png">
+      <Name>Laser</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Textures\LensFlare.png">
+      <Name>LensFlare</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Textures\MultiDot.png">
+      <Name>MultiDot</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Textures\Particle001.png">
+      <Name>Particle001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Textures\Particle002.png">
+      <Name>Particle002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Textures\Particle003.png">
+      <Name>Particle003</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Textures\Particle004.png">
+      <Name>Particle004</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Textures\Particle005.png">
+      <Name>Particle005</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Textures\Particle006.png">
+      <Name>Particle006</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Textures\Particle007.png">
+      <Name>Particle007</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Textures\Ring001.png">
+      <Name>Ring001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Textures\Ring002.png">
+      <Name>Ring002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Textures\SoftClumpy.png">
+      <Name>SoftClumpy</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Textures\SoftSmokey.png">
+      <Name>SoftSmokey</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Textures\Spikey001.png">
+      <Name>Spikey001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Textures\Spikey002.png">
+      <Name>Spikey002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Textures\Splash.png">
+      <Name>Splash</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Textures\Spray001.png">
+      <Name>Spray001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Textures\Star.png">
+      <Name>Star</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Textures\Water001.png">
+      <Name>Water001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Textures\Water002.png">
+      <Name>Water002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Particles\Textures\Weeds.png">
+      <Name>Weeds</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Materials\Forward\tile_floor.mat">
+      <Name>tile_floor</Name>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Importer>LightingMaterialImporter</Importer>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sunburn\light_rig.scene">
+      <Name>light_rig</Name>
+      <Importer>SceneImporter</Importer>
+      <Processor>SceneProcessor</Processor>
+    </Compile>
+    <Compile Include="Sunburn\scene_environment.env">
+      <Name>scene_environment</Name>
+      <Importer>SceneEnvironmentImporter</Importer>
+      <Processor>SceneEnvironmentProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\red.png">
+      <Name>red</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Materials\Forward\oldManSheet.mat">
+      <Name>oldManSheet</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Materials\Forward\Burberry.mat">
+      <Name>Burberry</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Materials\Forward\Concept4.mat">
+      <Name>Concept4</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Materials\Forward\scarfellina.mat">
+      <Name>scarfellina</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Materials\Forward\terrain.mat">
+      <Name>terrain</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Materials\Forward\grass1.mat">
+      <Name>grass1</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="Materials\Forward\bush1.mat">
+      <Name>bush1</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="Materials\Forward\bush2.mat">
+      <Name>bush2</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="Materials\Forward\tree1.mat">
+      <Name>tree1</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="Materials\Forward\tree2.mat">
+      <Name>tree2</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\terrainCollision.png">
+      <Name>terrainCollision</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Materials\Forward\fullBlack.mat">
+      <Name>fullBlack</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="Materials\Forward\oneCorner01.mat">
+      <Name>oneCorner01</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="Materials\Forward\twoCorners01.mat">
+      <Name>twoCorners01</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="Materials\Forward\twoCorners02.mat">
+      <Name>twoCorners02</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="Materials\Forward\twoCorners03.mat">
+      <Name>twoCorners03</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="Materials\Forward\twoCorners04.mat">
+      <Name>twoCorners04</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="Materials\Forward\twoCorners05.mat">
+      <Name>twoCorners05</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Materials\Forward\threeCorners01.mat">
+      <Name>threeCorners01</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\SilhouettePieces\threeCorners01.png">
+      <Name>threeCorners01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\SilhouettePieces\fullBlack.png">
+      <Name>fullBlack</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\SilhouettePieces\twoCorners05.png">
+      <Name>twoCorners05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\SilhouettePieces\oneCorner01.png">
+      <Name>oneCorner01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\SilhouettePieces\twoCorners01.png">
+      <Name>twoCorners01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\SilhouettePieces\twoCorners02.png">
+      <Name>twoCorners02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\SilhouettePieces\twoCorners03.png">
+      <Name>twoCorners03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\SilhouettePieces\twoCorners04.png">
+      <Name>twoCorners04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Materials\Forward\newCharacter.mat">
+      <Name>newCharacter</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Materials\Forward\whitePixel.mat">
+      <Name>whitePixel</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Materials\Forward\debugCircle.mat">
+      <Name>debugCircle</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="Materials\Forward\debugRectangle.mat">
+      <Name>debugRectangle</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Materials\Forward\TestLevelBG0.mat">
+      <Name>TestLevelBG0</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="Materials\Forward\TestLevelBG1.mat">
+      <Name>TestLevelBG1</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="Materials\Forward\TestLevelBG2.mat">
+      <Name>TestLevelBG2</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="Materials\Forward\TestLevelBG3.mat">
+      <Name>TestLevelBG3</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Materials\Forward\quadrant01_A.mat">
+      <Name>quadrant01_A</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="Materials\Forward\quadrant01_B.mat">
+      <Name>quadrant01_B</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="Materials\Forward\quadrant01_C.mat">
+      <Name>quadrant01_C</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="Materials\Forward\quadrant02_A.mat">
+      <Name>quadrant02_A</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="Materials\Forward\quadrant02_B.mat">
+      <Name>quadrant02_B</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\Levels\quadrant01_A_collision.PNG">
+      <Name>quadrant01_A_collision</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Levels\quadrant01_B_collision.PNG">
+      <Name>quadrant01_B_collision</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Levels\quadrant01_C_collision.PNG">
+      <Name>quadrant01_C_collision</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Levels\quadrant02_A_collision.PNG">
+      <Name>quadrant02_A_collision</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Levels\quadrant02_B_collision.PNG">
+      <Name>quadrant02_B_collision</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Materials\Forward\quadrant02_C.mat">
+      <Name>quadrant02_C</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\Levels\quadrant02_C_collision.PNG">
+      <Name>quadrant02_C_collision</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Materials\Forward\pillar01.mat">
+      <Name>pillar01</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Materials\Forward\pillar02.mat">
+      <Name>pillar02</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="Materials\Forward\pillar03.mat">
+      <Name>pillar03</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Materials\Forward\skullboy.mat">
+      <Name>skullboy</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Materials\Forward\quadrant3Front.mat">
+      <Name>quadrant3Front</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="Materials\Forward\quadrant3Mid.mat">
+      <Name>quadrant3Mid</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="Materials\Forward\quadrant4Back.mat">
+      <Name>quadrant4Back</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+    <Compile Include="Materials\Forward\quadrant4Front.mat">
+      <Name>quadrant4Front</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Textures\Levels\quadrant3BottomCollision.png">
+      <Name>quadrant3BottomCollision</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Levels\quadrant3MidCollision.png">
+      <Name>quadrant3MidCollision</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Levels\quadrant4BottomCollision.png">
+      <Name>quadrant4BottomCollision</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Textures\Levels\quadrant4TopCollision.png">
+      <Name>quadrant4TopCollision</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

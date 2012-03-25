@@ -1,0 +1,6 @@
+C:\dev2\Cohort7-Public\Venture\FSS\FNAEngine\FNA\Bin\Debug\FNADocumentation.XML
+C:\dev2\Cohort7-Public\Venture\FSS\FNAEngine\FNA\Bin\Debug\FNA.dll
+C:\dev2\Cohort7-Public\Venture\FSS\FNAEngine\FNA\Bin\Debug\FNA.pdb
+C:\dev2\Cohort7-Public\Venture\FSS\FNAEngine\FNA\Source\obj\Debug\ResolveAssemblyReference.cache
+C:\dev2\Cohort7-Public\Venture\FSS\FNAEngine\FNA\Source\obj\Debug\FNA.dll
+C:\dev2\Cohort7-Public\Venture\FSS\FNAEngine\FNA\Source\obj\Debug\FNA.pdb

@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Processors="SynapseGaming.LightingSystem.Processors">
+  <Asset Type="Processors:SceneContent">
+    <Identity>
+      <SourceFilename>C:\backup\Dropbox\FNA\Finale\WIP\Content\Sunburn\light_rig.scene</SourceFilename>
+    </Identity>
+    <Name>light_rig</Name>
+    <File>C:\backup\Dropbox\FNA\Finale\WIP\Content\Sunburn\light_rig.scene</File>
+    <ProjectFile>C:\backup\Dropbox\FNA\Finale\WIP\Content\Content.contentproj</ProjectFile>
+    <Xml>&lt;root&gt;
+  &lt;Scene&gt;
+    &lt;EntityGroups&gt;
+      &lt;List_x0060_1 /&gt;
+    &lt;/EntityGroups&gt;
+    &lt;LightGroups&gt;
+      &lt;List_x0060_1_0&gt;
+        &lt;item_0&gt;
+          &lt;LightGroup&gt;
+            &lt;Name&gt;Windmill&lt;/Name&gt;
+            &lt;ShadowType&gt;None&lt;/ShadowType&gt;
+            &lt;Position&gt;
+              &lt;Vector3&gt;
+                &lt;X&gt;0&lt;/X&gt;
+                &lt;Y&gt;0&lt;/Y&gt;
+                &lt;Z&gt;0&lt;/Z&gt;
+              &lt;/Vector3&gt;
+            &lt;/Position&gt;
+            &lt;Radius&gt;0&lt;/Radius&gt;
+            &lt;ShadowQuality&gt;0.5&lt;/ShadowQuality&gt;
+            &lt;ShadowPrimaryBias&gt;1&lt;/ShadowPrimaryBias&gt;
+            &lt;ShadowSecondaryBias&gt;0.2&lt;/ShadowSecondaryBias&gt;
+            &lt;ShadowPerSurfaceLOD&gt;True&lt;/ShadowPerSurfaceLOD&gt;
+            &lt;ShadowRenderLightsTogether&gt;False&lt;/ShadowRenderLightsTogether&gt;
+            &lt;ShadowGroup&gt;False&lt;/ShadowGroup&gt;
+            &lt;Lights&gt;
+              &lt;List_x0060_1_1&gt;
+                &lt;item_0&gt;
+                  &lt;AmbientLight&gt;
+                    &lt;Depth&gt;0.15&lt;/Depth&gt;
+                    &lt;UniqueId&gt;873727300&lt;/UniqueId&gt;
+                    &lt;Name&gt;Ambient Lighting&lt;/Name&gt;
+                    &lt;UpdateType&gt;None&lt;/UpdateType&gt;
+                    &lt;Enabled&gt;True&lt;/Enabled&gt;
+                    &lt;LightingType&gt;RealTime&lt;/LightingType&gt;
+                    &lt;DiffuseColor&gt;
+                      &lt;Vector3&gt;
+                        &lt;X&gt;0.6&lt;/X&gt;
+                        &lt;Y&gt;0.8352941&lt;/Y&gt;
+                        &lt;Z&gt;0.9647059&lt;/Z&gt;
+                      &lt;/Vector3&gt;
+                    &lt;/DiffuseColor&gt;
+                    &lt;Intensity&gt;0.65&lt;/Intensity&gt;
+                    &lt;FillLight&gt;False&lt;/FillLight&gt;
+                    &lt;FalloffStrength&gt;0&lt;/FalloffStrength&gt;
+                    &lt;Components&gt;
+                      &lt;List_x0060_1_2 /&gt;
+                    &lt;/Components&gt;
+                  &lt;/AmbientLight&gt;
+                &lt;/item_0&gt;
+                &lt;item_1&gt;
+                  &lt;PointLight&gt;
+                    &lt;ShadowType&gt;AllObjects&lt;/ShadowType&gt;
+                    &lt;Position&gt;
+                      &lt;Vector3&gt;
+                        &lt;X&gt;0&lt;/X&gt;
+                        &lt;Y&gt;0&lt;/Y&gt;
+                        &lt;Z&gt;0&lt;/Z&gt;
+                      &lt;/Vector3&gt;
+                    &lt;/Position&gt;
+                    &lt;Radius&gt;10&lt;/Radius&gt;
+                    &lt;ShadowQuality&gt;0.5&lt;/ShadowQuality&gt;
+                    &lt;ShadowPrimaryBias&gt;1&lt;/ShadowPrimaryBias&gt;
+                    &lt;ShadowSecondaryBias&gt;1&lt;/ShadowSecondaryBias&gt;
+                    &lt;ShadowPerSurfaceLOD&gt;True&lt;/ShadowPerSurfaceLOD&gt;
+                    &lt;UniqueId&gt;1007045513&lt;/UniqueId&gt;
+                    &lt;Name&gt;NewLight Copy&lt;/Name&gt;
+                    &lt;UpdateType&gt;None&lt;/UpdateType&gt;
+                    &lt;Enabled&gt;True&lt;/Enabled&gt;
+                    &lt;LightingType&gt;RealTime&lt;/LightingType&gt;
+                    &lt;DiffuseColor&gt;
+                      &lt;Vector3&gt;
+                        &lt;X&gt;1&lt;/X&gt;
+                        &lt;Y&gt;0&lt;/Y&gt;
+                        &lt;Z&gt;0&lt;/Z&gt;
+                      &lt;/Vector3&gt;
+                    &lt;/DiffuseColor&gt;
+                    &lt;Intensity&gt;1&lt;/Intensity&gt;
+                    &lt;FillLight&gt;False&lt;/FillLight&gt;
+                    &lt;FalloffStrength&gt;0&lt;/FalloffStrength&gt;
+                    &lt;Components&gt;
+                      &lt;List_x0060_1_2 /&gt;
+                    &lt;/Components&gt;
+                  &lt;/PointLight&gt;
+                &lt;/item_1&gt;
+              &lt;/List_x0060_1_1&gt;
+            &lt;/Lights&gt;
+          &lt;/LightGroup&gt;
+        &lt;/item_0&gt;
+      &lt;/List_x0060_1_0&gt;
+    &lt;/LightGroups&gt;
+  &lt;/Scene&gt;
+  &lt;classes&gt;
+    &lt;Scene fullname="SynapseGaming.LightingSystem.Rendering.Scene" assembly="SynapseGaming-SunBurn-Indie" fullyqualifiedname="SynapseGaming.LightingSystem.Rendering.Scene, SynapseGaming-SunBurn-Indie, Version=2.0.16.5, Culture=neutral, PublicKeyToken=eb76e51de43fcd70" /&gt;
+    &lt;List_x0060_1 fullname="System.Collections.Generic.List`1" assembly="mscorlib" fullyqualifiedname="System.Collections.Generic.List`1, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"&gt;
+      &lt;GenericArgument fullname="SynapseGaming.LightingSystem.Rendering.ISceneEntityGroup" assembly="SynapseGaming-SunBurn-Indie" fullyqualifiedname="SynapseGaming.LightingSystem.Rendering.ISceneEntityGroup, SynapseGaming-SunBurn-Indie, Version=2.0.16.5, Culture=neutral, PublicKeyToken=eb76e51de43fcd70" /&gt;
+    &lt;/List_x0060_1&gt;
+    &lt;List_x0060_1_0 fullname="System.Collections.Generic.List`1" assembly="mscorlib" fullyqualifiedname="System.Collections.Generic.List`1, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"&gt;
+      &lt;GenericArgument fullname="SynapseGaming.LightingSystem.Lights.ILightGroup" assembly="SynapseGaming-SunBurn-Indie" fullyqualifiedname="SynapseGaming.LightingSystem.Lights.ILightGroup, SynapseGaming-SunBurn-Indie, Version=2.0.16.5, Culture=neutral, PublicKeyToken=eb76e51de43fcd70" /&gt;
+    &lt;/List_x0060_1_0&gt;
+    &lt;LightGroup fullname="SynapseGaming.LightingSystem.Lights.LightGroup" assembly="SynapseGaming-SunBurn-Indie" fullyqualifiedname="SynapseGaming.LightingSystem.Lights.LightGroup, SynapseGaming-SunBurn-Indie, Version=2.0.16.5, Culture=neutral, PublicKeyToken=eb76e51de43fcd70" /&gt;
+    &lt;Vector3 fullname="Microsoft.Xna.Framework.Vector3" assembly="Microsoft.Xna.Framework" fullyqualifiedname="Microsoft.Xna.Framework.Vector3, Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553" /&gt;
+    &lt;List_x0060_1_1 fullname="System.Collections.Generic.List`1" assembly="mscorlib" fullyqualifiedname="System.Collections.Generic.List`1, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"&gt;
+      &lt;GenericArgument fullname="SynapseGaming.LightingSystem.Lights.ILight" assembly="SynapseGaming-SunBurn-Indie" fullyqualifiedname="SynapseGaming.LightingSystem.Lights.ILight, SynapseGaming-SunBurn-Indie, Version=2.0.16.5, Culture=neutral, PublicKeyToken=eb76e51de43fcd70" /&gt;
+    &lt;/List_x0060_1_1&gt;
+    &lt;AmbientLight fullname="SynapseGaming.LightingSystem.Lights.AmbientLight" assembly="SynapseGaming-SunBurn-Indie" fullyqualifiedname="SynapseGaming.LightingSystem.Lights.AmbientLight, SynapseGaming-SunBurn-Indie, Version=2.0.16.5, Culture=neutral, PublicKeyToken=eb76e51de43fcd70" /&gt;
+    &lt;List_x0060_1_2 fullname="System.Collections.Generic.List`1" assembly="mscorlib" fullyqualifiedname="System.Collections.Generic.List`1, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"&gt;
+      &lt;GenericArgument fullname="SynapseGaming.LightingSystem.Core.IComponent`1" assembly="SynapseGaming-SunBurn-Indie" fullyqualifiedname="SynapseGaming.LightingSystem.Core.IComponent`1, SynapseGaming-SunBurn-Indie, Version=2.0.16.5, Culture=neutral, PublicKeyToken=eb76e51de43fcd70"&gt;
+        &lt;GenericArgument fullname="SynapseGaming.LightingSystem.Lights.ILight" assembly="SynapseGaming-SunBurn-Indie" fullyqualifiedname="SynapseGaming.LightingSystem.Lights.ILight, SynapseGaming-SunBurn-Indie, Version=2.0.16.5, Culture=neutral, PublicKeyToken=eb76e51de43fcd70" /&gt;
+      &lt;/GenericArgument&gt;
+    &lt;/List_x0060_1_2&gt;
+    &lt;PointLight fullname="SynapseGaming.LightingSystem.Lights.PointLight" assembly="SynapseGaming-SunBurn-Indie" fullyqualifiedname="SynapseGaming.LightingSystem.Lights.PointLight, SynapseGaming-SunBurn-Indie, Version=2.0.16.5, Culture=neutral, PublicKeyToken=eb76e51de43fcd70" /&gt;
+  &lt;/classes&gt;
+&lt;/root&gt;</Xml>
+  </Asset>
+</XnaContent>
